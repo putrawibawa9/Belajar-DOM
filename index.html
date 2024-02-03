@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Page</title>
+
+    <style>
+      body {
+        text-align: center;
+      }
+
+      .bodyGreen {
+        background-color: green;
+      }
+
+      .box {
+        width: 25px;
+        height: 25px;
+        margin: 10px auto;
+      }
+
+      .red{
+        background-color: red;
+      }
+      .green{
+        background-color: green;
+      }
+      .blue{
+        background-color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Playing with colors</h1>
+
+    <button id="bChangeColor">Change Color</button>
+    <br />
+
+    <div class="box red"></div>
+
+    <input type="range" name="colorRed" min="0" max="255" />
+
+    <div class="box green">
+    </div>
+      <input type="range" name="colorGreen" />
+
+
+    <div class="box blue">
+    </div>
+      <input type="range" name="colorBlue" />
+    <script src="script.js"></script>
+  </body>
+</html>
