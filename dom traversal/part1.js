@@ -9,9 +9,12 @@ closeButton = document.querySelectorAll(".close");
 closeButton.forEach(function (i) {
   i.addEventListener("click", function (z) {
     z.target.parentElement.style.display = "none";
+    z.preventDefault();
   });
 });
 
-nama = document.querySelector(".nama");
+const name = ["indah", "damayanti", "putra", "wibawa"];
 
-console.log(nama.nextElementSibling);
+name.forEach(function (nama, iterasi) {
+  console.log("the " + (iterasi + 1) + " is " + nama);
+});
